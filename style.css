@@ -1,0 +1,45 @@
+/* CSS */
+
+body {
+  font-family: Overpass;
+  margin: auto;
+  background: #EEE8AA;
+}
+
+/* Banner Padrão */
+
+#banner-padrao {
+  background: #BDB76B;
+  margin: auto;
+  width: 900px;
+  height: 200px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+#footer-padrao {
+  background: #BDB76B;
+  margin: auto;
+  width: 900px;
+  height: 70px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+#copyright{
+  font-size: 12px;
+}
+
+#conteudo-padrao {
+  background: #EEE8AA;
+  margin: auto;
+  width: 900px;
+  height: 400px;
+  text-align: center;
+}
+
+#emcontrucao{
+  padding-top: 150px;
+  font-size: 30px;  
+}

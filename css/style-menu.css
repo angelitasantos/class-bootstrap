@@ -1,0 +1,58 @@
+/* Menu Padrão */
+
+#menu-padrao{
+  font-family: Overpass;
+  font-size: 15px;
+  margin: auto;
+  width: 900px;
+  height: 40px;
+}
+
+#menu-padrao ul{
+	margin: 0;
+	padding: 0;
+	line-height: 45px;
+}
+
+#menu-padrao li{
+	list-style-type: none;
+	float: right;
+	position: relative;
+	background-color: #EEE8AA;
+}
+
+#menu-padrao ul li a{
+	color: #000;
+	text-decoration: none;
+	width: 150px;
+	height: 40px;
+	display: block;
+	text-align: center;
+}
+
+#menu-padrao ul ul{
+	position: absolute;
+	top: 41px;
+	visibility: hidden;
+}
+
+#menu-padrao ul li:hover ul{
+	visibility: visible;	
+}
+
+#menu-padrao li a:hover{
+	color: #FFF;
+	background-color: #556B2F;
+}
+
+#menu-padrao ul li ul a:hover{
+	color: #FFF;
+	background-color: #556B2F;
+	
+}
+
+#img-logo{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
