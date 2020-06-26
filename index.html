@@ -1,99 +1,477 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+    <head>
+        <title>Bootstrap</title>
+        <link rel="icon" href="img/logo.png">
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-	<meta charset="UTF-8">
-	<title>Learning English</title>
-	<link rel="icon" type="icon" href="img/logo.png">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/style-menu.css">
-	<link rel="stylesheet" href="css/style-conteudo.css">
+        <!-- CSS e JavaScript -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
 
-	<!-- Criar um link para a fonte no Google Fonts -->
-	<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <script src="bootstrap/bootstrap.min.js"></script>
+    </head>
+    <body>
+      
+        <div class="jumbotron">
 
-</head>
+            <div class="text-center">
+                <div>
+                    <h1 class="display-4" onclick="reset()">Learning English</h1>
+                    <a class="btn btn-dark btn-lg" href="#" role="button" onclick="openBasic()">Basic</a>
+                    <a class="btn btn-dark btn-lg disabled" href="#" role="button">Intermediate</a>
+                    <a class="btn btn-dark btn-lg disabled" href="#" role="button">Advanced</a>    
+                </div>
+            </div>
+    
+            <div>  
+                <p class="lead text-center">Grammar, Listening, Reading, Writing, Speaking.</p>
+                <hr>
+                <div id="div-inicial" class="text-justify">
+                    <h3 class="text-center textoinicial my-3"></h3>
+                    <p>America is known as the land of opportunity, where one 
+                        could achieve anything they put their mind to, no matter who they are. 
+                        Thousands of people immigrate to the United States every year from different 
+                        parts of the world to have access to these kinds of opportunities. This is 
+                        what is known as "the American dream". One of the many reasons America is 
+                        such a great country is the diversity you see all around. America is one 
+                        big melting pot of citizens from different backgrounds.
+                    </p>
+                    <p>America is also home to many of the world's top colleges and universities. 
+                        The California Institute of Technology is a top world-ranked college that 
+                        focuses highly on science and engineering. It is located in the city of 
+                        Pasadena. Harvard University is another top world-ranked college that you 
+                        might be familiar with. The buildings at Harvard date all the way back to 
+                        the year 1636, making Harvard the oldest university in the United States. 
+                        It is located in the state of Massachusetts. University of California, 
+                        Los Angeles, is another institute worthy of recognition. Located next to 
+                        Hollywood, UCLA has distinguished itself as a prestigious and selective 
+                        university due to the number of people who apply for admission throughout 
+                        the United States. The universities mentioned are but a few of the many 
+                        other excellent schools that make the United States so outstanding.
+                    </p>
+                    <p>Fonte: <a href="https://www.rong-chang.com/customs/" target="_blank">rong-chang ESL</a></p>
+                </div>
 
-<body>
-	
-	<!-- Menu padrão -->
-	<div id="menu-padrao">
-			<img id="img-logo" src="img/logo.png">
+                <div class="row" id="div-conteudo">
+                    <div class="col-12">
+                        <!-- SubMenu-->
+                        <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">          
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-dark btn-lg" id="nav-pills-02" data-toggle="pill" href="#nav-item-01">Starter</a>   
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-dark btn-lg" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Beginner</a>   
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-dark btn-lg" id="nav-pills-02" data-toggle="pill" href="#nav-item-03">Elementary</a>   
+                            </li>
+                        </ul>
+          
+                        <!-- Contéudo do SubMenu-->
+                        <div class="tab-content" id="nav-pills-content">          
+                            <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                <div class="grid-cards text-center">
+                                    <div>
+                                        <h4>Listening and Reading</h4>
+                                        <div class="list-group list-group-flush mt-4">
+                                            <nav aria-label="Navegação página 1">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">01</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">05</a></li>
+                                                </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 2">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">06</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">07</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">08</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">09</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 3">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                                </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 4">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">17</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">19</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                                 </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 5">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">21</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">23</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">25</a></li>
+                                                </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 6">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">26</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">27</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">28</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">29</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                                 </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 7">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">31</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">32</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">33</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">34</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">35</a></li>
+                                                </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 8">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">36</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">37</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">38</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">39</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">40</a></li>
+                                                 </ul>
+                                            </nav>
+                                            <nav aria-label="Navegação página 9">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item"><a class="page-link" href="#">41</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">42</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">43</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">44</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">45</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>                                    
+                                    </div>
+                                    <div>
+                                        <h4>Grammar</h4>
+                                        <div class="list-group list-group-flush">
+                                            <a href="#" class="list-group-item list-group-item-action">Alphabet</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Greetings</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Articles</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Plural</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Demonstratives</a>
+                                            <a href="#" class="list-group-item list-group-item-action">How much is it?</a>
+                                            <a href="#" class="list-group-item list-group-item-action">There to be (present)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Verb to be (present)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">How old are you?</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Verb to have (present)</a>
+                                        </div>                                    
+                                    </div>
+                                    <div>
+                                        <h4>Vocabulary</h4>
+                                        <div class="list-group list-group-flush">
+                                            <a href="#" class="list-group-item list-group-item-action">Family tree</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Jobs and professions</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Cardinal numbers</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Colors and shapes</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Food and drink</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Places</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Animals (part 1)</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Classroom material</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Adjectives</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Marital status</a>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+          
+                          <div class="tab-pane fade show" id="nav-item-02" role="tabpanel">
+                            <div class="grid-cards text-center">
+                                <div>
+                                    <h4>Listening and Reading</h4>
+                                    <div class="list-group list-group-flush mt-4">
+                                        <nav aria-label="Navegação página 1">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">01</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">05</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 2">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">06</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">07</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">08</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">09</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 3">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 4">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">17</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">19</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                             </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 5">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">21</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">23</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">25</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 6">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">26</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">27</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">28</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">29</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                             </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 7">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">31</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">32</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">33</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">34</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">35</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 8">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">36</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">37</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">38</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">39</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">40</a></li>
+                                             </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 9">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">41</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">42</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">43</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">44</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">45</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>                                    
+                                </div>
+                                <div>
+                                    <h4>Grammar</h4>
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Possessive adjectives</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Personal information</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Countable</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Uncountable</a>
+                                        <a href="#" class="list-group-item list-group-item-action">How many?</a>
+                                        <a href="#" class="list-group-item list-group-item-action">How much?</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Order of adjectives</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Auxiliar Do, Does, Did</a>
+                                        <a href="#" class="list-group-item list-group-item-action">What do you do?</a>
+                                        <a href="#" class="list-group-item list-group-item-action">What time is it?</a>
+                                    </div>                                    
+                                </div>
+                                <div>
+                                    <h4>Vocabulary</h4>
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Nature</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Country</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Nationality</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Containers</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Sport</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Music</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Transportation</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Ordinal numbers</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Movie</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Time expressions</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                      </div>
+          
+                          <div class="tab-pane fade show" id="nav-item-03" role="tabpanel">
+                            <div class="grid-cards text-center">
+                                <div>
+                                    <h4>Listening and Reading</h4>
+                                    <div class="list-group list-group-flush mt-4">
+                                        <nav aria-label="Navegação página 1">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">01</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">05</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 2">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">06</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">07</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">08</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">09</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 3">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 4">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">17</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">18</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">19</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                             </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 5">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">21</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">23</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">25</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 6">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">26</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">27</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">28</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">29</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                             </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 7">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">31</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">32</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">33</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">34</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">35</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 8">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">36</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">37</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">38</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">39</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">40</a></li>
+                                             </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 9">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">41</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">42</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">43</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">44</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">45</a></li>
+                                            </ul>
+                                        </nav>
+                                </div>                                    
+                                </div>
+                                <div>
+                                    <h4>Grammar</h4>
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Simple present 1</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Simple present 2</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Prepositions of time</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Question words</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Present continuous</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Adverbs of frequency</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Prepositions of place</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Genitive case</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Past simple 1</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Past simple 2</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Phrasal verbs</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Daily routines</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Verb to be (past)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">There to be (past)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Verb to have (past)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">False cognates</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Directions</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Can (modal)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Future (will)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Future (going to)</a>
+                                    </div>                                    
+                                </div>
+                                <div>
+                                    <h4>Vocabulary</h4>
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Days of the week</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Months of the year</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Weather</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Clothes</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Seasons of the year</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Climate</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Parts of the house</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Parts of the body</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Animals (part 2)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Hobbies</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Regular verbs</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Irregular verbs</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Phrasal verbs</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (bedroom)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (bathroom)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (living room)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (kitchen)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (laundry)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (garden)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (office)</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                      </div>
+          
+                        </div>
+                        
+                      </div>
+                  </div>
+            </div>
+    
+        </div>
 
-		<ul>
-			<li><a href="#">Advanced</a>
-				<ul>
-					<li><a href="html/emcontrucao.html">Advanced</a></li>
-					<li><a href="html/emcontrucao.html">Advanced Plus</a></li>
-				</ul>
-			</li>
-		</ul>
+        <footer class="container-fluid text-center">
+            <p>Created by Angelita Santos</p>
+        </footer>
+      
+        <script type="text/javascript" src="js/script.js"></script>
 
-		<ul>
-			<li><a href="#">Intermediate</a>
-				<ul>
-					<li><a href="html/emcontrucao.html">Pre-Intermediate</a></li>
-					<li><a href="html/emcontrucao.html">Intermediate</a></li>
-					<li><a href="html/emcontrucao.html">Intermediate Plus</a></li>
-					<li><a href="html/emcontrucao.html">Upper-Intermediate</a></li>
-				</ul>
-			</li>
-		</ul>
-				
-		<ul>
-			<li><a href="#">Basic</a>
-				<ul>
-					<li><a href="html/emcontrucao.html">Starter</a></li>
-					<li><a href="html/emcontrucao.html">Beginner</a></li>
-					<li><a href="html/emcontrucao.html">Elementary</a></li>
-				</ul>
-			</li>	
-		</ul>
-
-	</div>
-
-	<!-- Banner padrão -->
-	<div id="banner-padrao">
-		<h1>Learning English</h1>
-		<h3>Conviva com o Inglês todos os dias!</h3>
-	</div>
-	
-
-	<!-- Conteudo -->
-	<div id="conteudo-padrao">
-
-		<div class="geral-padrao">
-
-			<div class="geral-card">
-				<img src="img/grid-basic.png" alt="Basic" width="200">
-				<a href="html/emcontrucao.html" class="btn">Basic</a>
-			</div>
-
-			<div class="geral-card">
-				<img src="img/grid-intermediate.png" alt="Intermediate" width="200">
-				<a href="html/emcontrucao.html" class="btn">Intermediate</a>
-			</div>
-
-			<div class="geral-card">
-				<img src="img/grid-advanced.png" alt="Advanced" width="200">
-				<a href="html/emcontrucao.html" class="btn">Advanced</a>
-			</div>
-						
-		</div>
-		
-		<div></div>
-		<div></div>
-		<div></div>
-
-	</div>
-	
-	<!-- Rodapé padrão -->
-	<div id="footer-padrao">
-		<p>Obrigado pela visita!</p>
-		<p id="copyright">Copyright 2020</p>
-	</div>
-	
-</body>
-
+    </body>
 </html>

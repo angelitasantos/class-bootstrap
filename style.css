@@ -1,45 +1,39 @@
-/* CSS */
-
-body {
-  font-family: Overpass;
-  margin: auto;
-  background: #EEE8AA;
+.btn-dark{
+    width: 160px;
 }
 
-/* Banner Padrão */
-
-#banner-padrao {
-  background: #BDB76B;
-  margin: auto;
-  width: 900px;
-  height: 200px;
-  text-align: center;
-  padding-top: 70px;
+.btn-dark.btn-lg {
+    margin: 10px;
 }
 
-#footer-padrao {
-  background: #BDB76B;
-  margin: auto;
-  width: 900px;
-  height: 70px;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 20px;
+.nav-link.btn.btn-dark.btn-lg{
+    background-color: gray;
 }
 
-#copyright{
-  font-size: 12px;
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
 }
 
-#conteudo-padrao {
-  background: #EEE8AA;
-  margin: auto;
-  width: 900px;
-  height: 400px;
-  text-align: center;
+@media (min-width: 200px) {
+    .grid-cards{
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
 }
-
-#emcontrucao{
-  padding-top: 150px;
-  font-size: 30px;  
+  
+@media (min-width: 550px) {
+    .grid-cards{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+    }    
+}
+  
+@media (min-width: 850px) {
+    .grid-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 16px;
+    }    
 }
