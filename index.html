@@ -1,304 +1,496 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <title>Bootstrap</title>
-        <link rel="icon" href="img/logo.png">
-        
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- CSS e JavaScript -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link rel="icon" href="img/logo.png">
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-        <script src="bootstrap/bootstrap.min.js"></script>
-    </head>
-    <body>
-      
-        <div class="jumbotron">
+    <!-- CSS e JavaScript -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
-            <div class="text-center">
-                <div>
-                    <h1 class="display-4" onclick="reset()">Learning English</h1>
-                    <a class="btn btn-dark btn-lg" href="#" role="button" onclick="openBasic()">Basic</a>
-                    <a class="btn btn-dark btn-lg disabled" href="#" role="button">Intermediate</a>
-                    <a class="btn btn-dark btn-lg disabled" href="#" role="button">Advanced</a>    
-                </div>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+
+        <div class="text-center">
+            <div>
+                <h1 class="display-4" onclick="reset()">Learning English</h1>
+                <a class="btn btn-dark btn-lg" href="#" role="button" onclick="openBasic()">Basic</a>
+                <a class="btn btn-dark btn-lg disabled" href="#" role="button">Intermediate</a>
+                <a class="btn btn-dark btn-lg disabled" href="#" role="button">Advanced</a>
             </div>
-    
-            <div>  
-                <p class="lead text-center">Grammar, Listening, Reading, Writing, Speaking.</p>
-                <hr>
-                <div id="div-inicial" class="text-justify">
-                    <h3 class="text-center textoinicial my-3"></h3>
-                    <p>America is known as the land of opportunity, where one 
-                        could achieve anything they put their mind to, no matter who they are. 
-                        Thousands of people immigrate to the United States every year from different 
-                        parts of the world to have access to these kinds of opportunities. This is 
-                        what is known as "the American dream". One of the many reasons America is 
-                        such a great country is the diversity you see all around. America is one 
-                        big melting pot of citizens from different backgrounds.
-                    </p>
-                    <p>America is also home to many of the world's top colleges and universities. 
-                        The California Institute of Technology is a top world-ranked college that 
-                        focuses highly on science and engineering. It is located in the city of 
-                        Pasadena. Harvard University is another top world-ranked college that you 
-                        might be familiar with. The buildings at Harvard date all the way back to 
-                        the year 1636, making Harvard the oldest university in the United States. 
-                        It is located in the state of Massachusetts. University of California, 
-                        Los Angeles, is another institute worthy of recognition. Located next to 
-                        Hollywood, UCLA has distinguished itself as a prestigious and selective 
-                        university due to the number of people who apply for admission throughout 
-                        the United States. The universities mentioned are but a few of the many 
-                        other excellent schools that make the United States so outstanding.
-                    </p>
-                    <p>Fonte: <a href="https://www.rong-chang.com/customs/" target="_blank">rong-chang ESL</a></p>
-                </div>
+        </div>
 
-                <div class="row" id="div-conteudo">
-                    <div class="col-12">
-                        <!-- SubMenu-->
-                        <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">          
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-dark btn-lg active" id="nav-pills-02" data-toggle="pill" href="#nav-item-01">Starter</a>   
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-dark btn-lg" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Beginner</a>   
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-dark btn-lg" id="nav-pills-02" data-toggle="pill" href="#nav-item-03">Elementary</a>   
-                            </li>
-                        </ul>
-          
-                        <!-- Contéudo do SubMenu-->
-                        <div class="tab-content" id="nav-pills-content">          
-                            <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
-                                <div class="grid-cards text-center">
-                                    <div>
-                                        <h4>Listening and Reading</h4>
-                                        <div class="list-group list-group-flush mt-4">
-                                            <nav aria-label="Navegação página 1">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Going to the Zoo" href="https://www.eslfast.com/kidsenglish/ke/ke001.htm">01</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="A new pet" href="https://www.eslfast.com/kidsenglish/ke/ke011.htm">02</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="A cat and a mouse" href="https://www.eslfast.com/kidsenglish/ke/ke013.htm">03</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="A lot of ants" href="https://www.eslfast.com/kidsenglish/ke/ke018.htm">04</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Petting Zoo" href="https://www.eslfast.com/kidsenglish/ke/ke020.htm">05</a></li>
-                                                </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 2">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Too sick" href="https://www.eslfast.com/kidsenglish/ke/ke077.htm">06</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Bad manners" href="https://www.eslfast.com/kidsenglish/ke/ke079.htm">07</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Good manners" href="https://www.eslfast.com/kidsenglish/ke/ke081.htm">08</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="A good shower" href="https://www.eslfast.com/kidsenglish/ke/ke088.htm">09</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="The wrong color" href="https://www.eslfast.com/kidsenglish/ke/ke089.htm">10</a></li>
-                                                </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 3">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Art class" href="https://www.eslfast.com/kidsenglish/ke/ke061.htm">11</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Aunt and uncle" href="https://www.eslfast.com/kidsenglish/ke/ke064.htm">12</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Fruit salad" href="https://www.eslfast.com/kidsenglish/ke/ke066.htm">13</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="The second dog" href="https://www.eslfast.com/kidsenglish/ke/ke069.htm">14</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="A cat and a ball of yarn" href="https://www.eslfast.com/kidsenglish/ke/ke070.htm">15</a></li>
-                                                </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 4">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Making a snowman" href="https://www.eslfast.com/kidsenglish/ke/ke029.htm">16</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Practicing drawing" href="https://www.eslfast.com/kidsenglish/ke/ke031.htm">17</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="A long wait" href="https://www.eslfast.com/kidsenglish/ke/ke037.htm">18</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="The circus" href="https://www.eslfast.com/kidsenglish/ke/ke040.htm">19</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Loving dance" href="https://www.eslfast.com/kidsenglish/ke/ke044.htm">20</a></li>
-                                                 </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 5">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Going to school" href="https://www.eslfast.com/kidsenglish2/ke2/ke2001.htm">21</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Picking a book" href="https://www.eslfast.com/kidsenglish2/ke2/ke2005.htm">22</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Studying at the library" href="https://www.eslfast.com/kidsenglish2/ke2/ke2007.htm">23</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Taking notes" href="https://www.eslfast.com/kidsenglish2/ke2/ke2008.htm">24</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="He takes a test" href="https://www.eslfast.com/kidsenglish2/ke2/ke2010.htm">25</a></li>
-                                                </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 6">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="He loses the cap" href="https://www.eslfast.com/kidsenglish2/ke2/ke2013.htm">26</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Ice cream in the Summer" href="https://www.eslfast.com/kidsenglish2/ke2/ke2016.htm">27</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="She eats lemons" href="https://www.eslfast.com/kidsenglish2/ke2/ke2017.htm">28</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Best Friends" href="https://www.eslfast.com/kidsenglish2/ke2/ke2021.htm">29</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Buying a backpack" href="https://www.eslfast.com/kidsenglish2/ke2/ke2022.htm">30</a></li>
-                                                 </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 7">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Ugly boots" href="https://www.eslfast.com/kidsenglish2/ke2/ke2027.htm">31</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Ear piercings" href="https://www.eslfast.com/kidsenglish2/ke2/ke2029.htm">32</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="A warm jacket" href="https://www.eslfast.com/kidsenglish2/ke2/ke2032.htm">33</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="He makes sandcastles" href="https://www.eslfast.com/kidsenglish2/ke2/ke2035.htm">34</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="He listens to music" href="https://www.eslfast.com/kidsenglish2/ke2/ke2036.htm">35</a></li>
-                                                </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 8">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="She likes running" href="https://www.eslfast.com/kidsenglish2/ke2/ke2037.htm">36</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Halloween is fun" href="https://www.eslfast.com/kidsenglish2/ke2/ke2038.htm">37</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Saving a cat" href="https://www.eslfast.com/kidsenglish2/ke2/ke2041.htm">38</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Killing an ant" href="https://www.eslfast.com/kidsenglish2/ke2/ke2042.htm">39</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="Don't touch the dog" href="https://www.eslfast.com/kidsenglish2/ke2/ke2041.htm">40</a></li>
-                                                 </ul>
-                                            </nav>
-                                            <nav aria-label="Navegação página 9">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="She is a doctor" href="https://www.eslfast.com/kidsenglish2/ke2/ke2051.htm">41</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="She washes her face" href="https://www.eslfast.com/kidsenglish2/ke2/ke2053.htm">42</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="She gives him a bible" href="https://www.eslfast.com/kidsenglish2/ke2/ke2054.htm">43</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="She gets coffee" href="https://www.eslfast.com/kidsenglish2/ke2/ke2058.htm">44</a></li>
-                                                    <li class="page-item"><a class="page-link" target="_blank" title="He buys a present" href="https://www.eslfast.com/kidsenglish2/ke2/ke2059.htm">45</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>                                    
-                                    </div>
-                                    <div>
-                                        <h4>Grammar</h4>
-                                        <div class="list-group list-group-flush">
-                                            <a href="#" class="list-group-item list-group-item-action">Alphabet</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Greetings</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Articles</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Plural</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Demonstratives</a>
-                                            <a href="#" class="list-group-item list-group-item-action">How much is it?</a>
-                                            <a href="#" class="list-group-item list-group-item-action">There to be (present)</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Verb to be (present)</a>
-                                            <a href="#" class="list-group-item list-group-item-action">How old are you?</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Verb to have (present)</a>
-                                        </div>                                    
-                                    </div>
-                                    <div>
-                                        <h4>Vocabulary</h4>
-                                        <div class="list-group list-group-flush">
-                                            <a href="#" class="list-group-item list-group-item-action">Family tree</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Jobs and professions</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Cardinal numbers</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Colors and shapes</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Food and drink</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Places</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Animals (part 1)</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Classroom material</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Adjectives</a>
-                                            <a href="#" class="list-group-item list-group-item-action">Marital status</a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                            </div>
-          
-                          <div class="tab-pane fade show" id="nav-item-02" role="tabpanel">
+        <div>
+            <p class="lead text-center">Grammar, Listening, Reading, Writing, Speaking.</p>
+            <hr>
+            <div id="div-inicial" class="text-justify">
+                <h3 class="text-center textoinicial my-3"></h3>
+                <p>America is known as the land of opportunity, where one
+                    could achieve anything they put their mind to, no matter who they are.
+                    Thousands of people immigrate to the United States every year from different
+                    parts of the world to have access to these kinds of opportunities. This is
+                    what is known as "the American dream". One of the many reasons America is
+                    such a great country is the diversity you see all around. America is one
+                    big melting pot of citizens from different backgrounds.
+                </p>
+                <p>America is also home to many of the world's top colleges and universities.
+                    The California Institute of Technology is a top world-ranked college that
+                    focuses highly on science and engineering. It is located in the city of
+                    Pasadena. Harvard University is another top world-ranked college that you
+                    might be familiar with. The buildings at Harvard date all the way back to
+                    the year 1636, making Harvard the oldest university in the United States.
+                    It is located in the state of Massachusetts. University of California,
+                    Los Angeles, is another institute worthy of recognition. Located next to
+                    Hollywood, UCLA has distinguished itself as a prestigious and selective
+                    university due to the number of people who apply for admission throughout
+                    the United States. The universities mentioned are but a few of the many
+                    other excellent schools that make the United States so outstanding.
+                </p>
+                <p>Fonte: <a href="https://www.rong-chang.com/customs/" target="_blank">rong-chang ESL</a></p>
+            </div>
+
+            <div class="row" id="div-conteudo">
+                <div class="col-12">
+                    <!-- SubMenu-->
+                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark btn-lg active" id="nav-pills-02" data-toggle="pill"
+                                href="#nav-item-01">Starter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark btn-lg" id="nav-pills-02" data-toggle="pill"
+                                href="#nav-item-02">Beginner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark btn-lg" id="nav-pills-02" data-toggle="pill"
+                                href="#nav-item-03">Elementary</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contéudo do SubMenu-->
+                    <div class="tab-content" id="nav-pills-content">
+                        <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
                             <div class="grid-cards text-center">
                                 <div>
                                     <h4>Listening and Reading</h4>
                                     <div class="list-group list-group-flush mt-4">
                                         <nav aria-label="Navegação página 1">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">01</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">02</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">03</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">04</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">05</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Going to the Zoo"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke001.htm">01</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="A new pet"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke011.htm">02</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="A cat and a mouse"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke013.htm">03</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="A lot of ants"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke018.htm">04</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Petting Zoo"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke020.htm">05</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 2">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">06</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">07</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">08</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">09</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">10</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Too sick"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke077.htm">06</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Bad manners"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke079.htm">07</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Good manners"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke081.htm">08</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="A good shower"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke088.htm">09</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="The wrong color"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke089.htm">10</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 3">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">11</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">12</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">13</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">14</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">15</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Art class"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke061.htm">11</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Aunt and uncle"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke064.htm">12</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Fruit salad"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke066.htm">13</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="The second dog"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke069.htm">14</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="A cat and a ball of yarn"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke070.htm">15</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 4">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">16</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">17</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">18</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">19</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">20</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Making a snowman"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke029.htm">16</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Practicing drawing"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke031.htm">17</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="A long wait"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke037.htm">18</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="The circus"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke040.htm">19</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Loving dance"
+                                                        href="https://www.eslfast.com/kidsenglish/ke/ke044.htm">20</a>
+                                                </li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 5">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">21</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">22</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">23</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">24</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">25</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Going to school"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2001.htm">21</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Picking a book"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2005.htm">22</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Studying at the library"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2007.htm">23</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Taking notes"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2008.htm">24</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="He takes a test"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2010.htm">25</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 6">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">26</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">27</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">28</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">29</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">30</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="He loses the cap"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2013.htm">26</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Ice cream in the Summer"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2016.htm">27</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="She eats lemons"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2017.htm">28</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Best Friends"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2021.htm">29</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Buying a backpack"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2022.htm">30</a>
+                                                </li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 7">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">31</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">32</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">33</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">34</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">35</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Ugly boots"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2027.htm">31</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Ear piercings"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2029.htm">32</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="A warm jacket"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2032.htm">33</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="He makes sandcastles"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2035.htm">34</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="He listens to music"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2036.htm">35</a>
+                                                </li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 8">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">36</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">37</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">38</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">39</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">40</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="She likes running"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2037.htm">36</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Halloween is fun"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2038.htm">37</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Saving a cat"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2041.htm">38</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Killing an ant"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2042.htm">39</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="Don't touch the dog"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2041.htm">40</a>
+                                                </li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 9">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">41</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">42</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">43</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">44</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">45</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="She is a doctor"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2051.htm">41</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="She washes her face"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2053.htm">42</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="She gives him a bible"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2054.htm">43</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="She gets coffee"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2058.htm">44</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" target="_blank"
+                                                        title="He buys a present"
+                                                        href="https://www.eslfast.com/kidsenglish2/ke2/ke2059.htm">45</a>
+                                                </li>
                                             </ul>
                                         </nav>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div>
                                     <h4>Grammar</h4>
                                     <div class="list-group list-group-flush">
-                                        <a href="#" class="list-group-item list-group-item-action">Possessive adjectives</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Personal information</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Alphabet</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Greetings</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Articles</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Plural</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Demonstratives</a>
+                                        <a href="#" class="list-group-item list-group-item-action">How much is it?</a>
+                                        <a href="#" class="list-group-item list-group-item-action">There to be
+                                            (present)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Verb to be
+                                            (present)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">How old are you?</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Verb to have
+                                            (present)</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Vocabulary</h4>
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Family tree</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Jobs and
+                                            professions</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Cardinal numbers</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Colors and shapes</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Food and drink</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Places</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Animals (part 1)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Classroom
+                                            material</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Adjectives</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Marital status</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade show" id="nav-item-02" role="tabpanel">
+                            <div class="grid-cards text-center">
+                                <div>
+                                    <h4>Listening and Reading</h4>
+                                    <div class="list-group list-group-flush mt-4">
+                                        <nav aria-label="Navegação página 1">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">01</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">02</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">03</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">04</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">05</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 2">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">06</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">07</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">08</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">09</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">10</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 3">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">15</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 4">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">17</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">18</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">19</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">20</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 5">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">21</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">22</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">23</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">24</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">25</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 6">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">26</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">27</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">28</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">29</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">30</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 7">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">31</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">32</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">33</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">34</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">35</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 8">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">36</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">37</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">38</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">39</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">40</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav aria-label="Navegação página 9">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">41</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">42</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">43</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">44</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">45</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Grammar</h4>
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Possessive
+                                            adjectives</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Personal
+                                            information</a>
                                         <a href="#" class="list-group-item list-group-item-action">Countable</a>
                                         <a href="#" class="list-group-item list-group-item-action">Uncountable</a>
                                         <a href="#" class="list-group-item list-group-item-action">How many?</a>
                                         <a href="#" class="list-group-item list-group-item-action">How much?</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Order of adjectives</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Auxiliar Do, Does, Did</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Order of
+                                            adjectives</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Auxiliar Do, Does,
+                                            Did</a>
                                         <a href="#" class="list-group-item list-group-item-action">What do you do?</a>
                                         <a href="#" class="list-group-item list-group-item-action">What time is it?</a>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div>
                                     <h4>Vocabulary</h4>
@@ -313,246 +505,353 @@
                                         <a href="#" class="list-group-item list-group-item-action">Ordinal numbers</a>
                                         <a href="#" class="list-group-item list-group-item-action">Movie</a>
                                         <a href="#" class="list-group-item list-group-item-action">Time expressions</a>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </div>
-                      </div>
-          
-                          <div class="tab-pane fade show" id="nav-item-03" role="tabpanel">
+                        </div>
+
+                        <div class="tab-pane fade show" id="nav-item-03" role="tabpanel">
                             <div class="grid-cards text-center">
                                 <div>
                                     <h4>Listening and Reading</h4>
                                     <div class="list-group list-group-flush mt-4">
                                         <nav aria-label="Navegação página 1">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">01</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">02</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">03</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">04</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">05</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">01</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">02</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">03</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">04</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">05</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 2">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">06</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">07</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">08</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">09</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">10</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">06</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">07</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">08</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">09</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">10</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 3">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">11</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">12</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">13</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">14</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">15</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">11</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">12</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">13</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">14</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">15</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 4">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">16</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">17</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">18</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">19</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">20</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">16</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">17</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">18</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">19</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">20</a></li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 5">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">21</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">22</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">23</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">24</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">25</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">21</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">22</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">23</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">24</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">25</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 6">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">26</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">27</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">28</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">29</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">30</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">26</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">27</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">28</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">29</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">30</a></li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 7">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">31</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">32</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">33</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">34</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">35</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">31</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">32</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">33</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">34</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">35</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 8">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">36</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">37</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">38</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">39</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">40</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">36</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">37</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">38</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">39</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">40</a></li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 9">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">41</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">42</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">43</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">44</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">45</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">41</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">42</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">43</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">44</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">45</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 10">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">46</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">47</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">48</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">49</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">50</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">46</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">47</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">48</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">49</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">50</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 11">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">51</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">52</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">53</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">54</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">55</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">51</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">52</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">53</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">54</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">55</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 12">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">56</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">57</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">58</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">59</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">60</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">56</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">57</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">58</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">59</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">60</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 13">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">61</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">62</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">63</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">64</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">65</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">61</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">62</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">63</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">64</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">65</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 14">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">66</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">67</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">68</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">69</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">70</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">66</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">67</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">68</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">69</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">70</a></li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 15">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">71</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">72</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">73</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">74</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">75</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">71</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">72</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">73</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">74</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">75</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 16">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">76</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">77</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">78</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">79</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">80</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">76</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">77</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">78</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">79</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">80</a></li>
+                                            </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 17">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">81</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">82</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">83</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">84</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">85</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">81</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">82</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">83</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">84</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">85</a></li>
                                             </ul>
                                         </nav>
                                         <nav aria-label="Navegação página 18">
                                             <ul class="pagination justify-content-center">
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">86</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">87</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">88</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">89</a></li>
-                                                <li class="page-item"><a class="page-link" target="_blank" title="" href="#">90</a></li>
-                                             </ul>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">86</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">87</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">88</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">89</a></li>
+                                                <li class="page-item"><a class="page-link" target="_blank" title=""
+                                                        href="#">90</a></li>
+                                            </ul>
                                         </nav>
-                                </div>                                    
+                                    </div>
                                 </div>
                                 <div>
                                     <h4>Grammar</h4>
                                     <div class="list-group list-group-flush">
                                         <a href="#" class="list-group-item list-group-item-action">Simple present 1</a>
                                         <a href="#" class="list-group-item list-group-item-action">Simple present 2</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Prepositions of time</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Prepositions of
+                                            time</a>
                                         <a href="#" class="list-group-item list-group-item-action">Question words</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Present continuous</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Adverbs of frequency</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Prepositions of place</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Present
+                                            continuous</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Adverbs of
+                                            frequency</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Prepositions of
+                                            place</a>
                                         <a href="#" class="list-group-item list-group-item-action">Genitive case</a>
                                         <a href="#" class="list-group-item list-group-item-action">Past simple 1</a>
                                         <a href="#" class="list-group-item list-group-item-action">Past simple 2</a>
                                         <a href="#" class="list-group-item list-group-item-action">Phrasal verbs</a>
                                         <a href="#" class="list-group-item list-group-item-action">Daily routines</a>
                                         <a href="#" class="list-group-item list-group-item-action">Verb to be (past)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">There to be (past)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Verb to have (past)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">There to be
+                                            (past)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Verb to have
+                                            (past)</a>
                                         <a href="#" class="list-group-item list-group-item-action">False cognates</a>
                                         <a href="#" class="list-group-item list-group-item-action">Directions</a>
                                         <a href="#" class="list-group-item list-group-item-action">Can (modal)</a>
                                         <a href="#" class="list-group-item list-group-item-action">Future (will)</a>
                                         <a href="#" class="list-group-item list-group-item-action">Future (going to)</a>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div>
                                     <h4>Vocabulary</h4>
                                     <div class="list-group list-group-flush">
                                         <a href="#" class="list-group-item list-group-item-action">Days of the week</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Months of the year</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Months of the
+                                            year</a>
                                         <a href="#" class="list-group-item list-group-item-action">Weather</a>
                                         <a href="#" class="list-group-item list-group-item-action">Clothes</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Seasons of the year</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Seasons of the
+                                            year</a>
                                         <a href="#" class="list-group-item list-group-item-action">Climate</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Parts of the house</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Parts of the
+                                            house</a>
                                         <a href="#" class="list-group-item list-group-item-action">Parts of the body</a>
                                         <a href="#" class="list-group-item list-group-item-action">Animals (part 2)</a>
                                         <a href="#" class="list-group-item list-group-item-action">Hobbies</a>
                                         <a href="#" class="list-group-item list-group-item-action">Regular verbs</a>
                                         <a href="#" class="list-group-item list-group-item-action">Irregular verbs</a>
                                         <a href="#" class="list-group-item list-group-item-action">Phrasal verbs</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Furniture (bedroom)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Furniture (bathroom)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Furniture (living room)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Furniture (kitchen)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Furniture (laundry)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Furniture (garden)</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Furniture (office)</a>
-                                    </div>                                    
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture
+                                            (bedroom)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture
+                                            (bathroom)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture (living
+                                            room)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture
+                                            (kitchen)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture
+                                            (laundry)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture
+                                            (garden)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Furniture
+                                            (office)</a>
+                                    </div>
                                 </div>
                             </div>
-                      </div>
-          
                         </div>
-                        
-                      </div>
-                  </div>
+
+                    </div>
+
+                </div>
             </div>
-    
         </div>
 
-        <footer class="container-fluid text-center">
-            <p>Created by Angelita Santos</p>
-        </footer>
-      
-        <script type="text/javascript" src="js/script.js"></script>
+    </div>
 
-    </body>
+    <footer class="container-fluid text-center">
+        <p>Created by Angelita Santos</p>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
 </html>
